@@ -1,0 +1,16 @@
+.footer-nav {
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: inherit;
+
+    @include hover(color, lighten($footer-font-color, 10%));
+  }
+}

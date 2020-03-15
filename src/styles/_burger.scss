@@ -1,0 +1,36 @@
+.burger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 13px;
+  cursor: pointer;
+  z-index: 2;
+
+  &__span {
+    display: block;
+    height: 1px;
+    background-color: $highlight-color;
+    transition: transform 0.3s;
+  }
+
+  &--clicked {
+
+    .burger__span {
+      background-color: #e4dfd3;
+
+      &:first-child {
+        transform: translateY(5px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        width: 0;
+      }
+
+      &:last-child {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  }
+}

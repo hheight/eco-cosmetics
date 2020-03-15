@@ -1,13 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Cosmetics</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="burger">
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+      </div>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./#shop" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="./#contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="./#about" class="nav__link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./" class="logo header__logo">
+        <img src="./images/icons/logo.svg" alt="Eco Cosmetics logo">
+      </a>
+      <a href="./shipping.html" class="header__cart">
+        <img src="./images/icons/cart.svg" alt="Cart icon">
+      </a>
+    </header>
+  </div>
+  <main class="main">
+    <div class="container">
+      <section class="section">
+        <div class="showcase">
+          <div class="showcase__photo">
+            <img src="./images/showcase.jpg" class="showcase__image" alt="Cream jars">
+          </div>
+          <div class="showcase__description">
+            <h1 class="showcase__title">Brand of eco-cosmetics and magic candles</h1>
+            <p class="showcase__subtitle">20% of sales at a wild bird shelter</p>
+            <button class="button showcase__button">Shop</button>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="info">
+          <p class="info__paragraph">
+            Biologists say that birds are indicators of the environmental situation, and over the past half century, the
+            population of seabirds has declined by 70%. Birds die due to environmental problems and human intervention in
+            the natural environment.
+          </p>
+          <h3 class="info__scroll-down">
+            If you choose the gifts of nature and care about it’s - scroll down
+          </h3>
+        </div>
+      </section>
+      <section class="section" id="about">
+        <h2 class="heading">About our brand</h2>
+        <div class="about">
+          <p class="section__paragraph">
+            Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair
+            conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper
+            labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or
+            reused.
+          </p>
+          <a href="#!" class="learn-more about__learn-more">
+            Learn more
+          </a>
+        </div>
+      </section>
+      <section class="section" id="shop">
+        <div class="shop">
+          <h2 class="heading shop__heading">Shop</h2>
+          <div class="shop__tabs">
+            <div class="shop__tab">
+              <input type="radio" id="tab-1" class="shop__tab-btn" name="tab-group" checked>
+              <label for="tab-1" class="shop__tab-label">Face</label>
+              <div class="shop__tab-content">
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-facecream.jpg"
+                      class="shop__product-image"
+                      alt="Face cream"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Face cream</h3>
+                  <p class="shop__product-price">210 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-creamjars.jpg"
+                      class="shop__product-image"
+                      alt="Vitamin cream"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Vitamin cream</h3>
+                  <p class="shop__product-price">175 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-ubtan.jpg"
+                      class="shop__product-image"
+                      alt="Ubtan"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Ubtan</h3>
+                  <p class="shop__product-price">120 uah</p>
+                </a>
+              </div>
+            </div>
+            <div class="shop__tab">
+              <input type="radio" id="tab-2" class="shop__tab-btn" name="tab-group">
+              <label for="tab-2" class="shop__tab-label">Body</label>
+              <div class="shop__tab-content">
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-ubtan.jpg"
+                      class="shop__product-image"
+                      alt="Ubtan"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Ubtan</h3>
+                  <p class="shop__product-price">120 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-shampoo.jpg"
+                      class="shop__product-image"
+                      alt="Oil shampoo"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Shampoo</h3>
+                  <p class="shop__product-price">210 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-bottles.jpg"
+                      class="shop__product-image"
+                      alt="Oil bottles"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Hydrophilic oil</h3>
+                  <p class="shop__product-price">160 uah</p>
+                </a>
+              </div>
+            </div>
+            <div class="shop__tab">
+              <input type="radio" id="tab-3" class="shop__tab-btn" name="tab-group">
+              <label for="tab-3" class="shop__tab-label">Hair</label>
+              <div class="shop__tab-content">
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-bottles.jpg"
+                      class="shop__product-image"
+                      alt="Oil bottles"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Hydrophilic oil</h3>
+                  <p class="shop__product-price">160 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-ubtan.jpg"
+                      class="shop__product-image"
+                      alt="Ubtan"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Ubtan</h3>
+                  <p class="shop__product-price">120 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-shampoo.jpg"
+                      class="shop__product-image"
+                      alt="Oil shampoo"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Shampoo</h3>
+                  <p class="shop__product-price">210 uah</p>
+                </a>
+              </div>
+            </div>
+            <div class="shop__tab">
+              <input type="radio" id="tab-4" class="shop__tab-btn" name="tab-group">
+              <label for="tab-4" class="shop__tab-label">Candles</label>
+              <div class="shop__tab-content">
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-candle.jpg"
+                      class="shop__product-image"
+                      alt="Oil bottles"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Candle</h3>
+                  <p class="shop__product-price">165 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-bird.jpg"
+                      class="shop__product-image"
+                      alt="The bird"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Bird</h3>
+                  <p class="shop__product-price">1200 uah</p>
+                </a>
+                <a href="./product.html" class="shop__item">
+                  <div class="shop__product-photo">
+                    <img
+                      src="./images/shop-ubtan.jpg"
+                      class="shop__product-image"
+                      alt="Ubtan"
+                    >
+                  </div>
+                  <h3 class="shop__product-title">Ubtan</h3>
+                  <p class="shop__product-price">120 uah</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="button shop__button">All products</button>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="heading">About the creators</h2>
+        <div class="creators">
+          <p class="section__paragraph">
+            My name is Victoria, I’m a master at candle making and natural cosmetics. In the past, a cynologist, was engaged
+            in herbs, made layouts on the Tarot.
+          </p>
+          <p class="section__paragraph">
+            I am also a volunteer to save wild birds in distress, a consultant to the Phoenix Wildlife Rehabilitation
+            Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife
+            International.
+          </p>
+          <a href="#!" class="learn-more creators__learn-more">
+            Learn more
+          </a>
+          <button class="button creators__button">To contact us</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="ingridients">
+          <h2 class="heading ingridients__title">Ayurvedic Tooth Powder</h2>
+          <img
+            src="./images/tooth-powder.png"
+            alt="Tooth powder"
+            class="ingridients__image"
+          >
+          <a href="#!" class="learn-more ingridients__learn-more">
+            Learn more
+          </a>
+          <div class="ingridients__info">
+            <div class="ingridients__item">
+              <img
+                src="./images/icons/dead-bird.svg"
+                class="ingridients__icon"
+                alt="Dead bird icon"
+              >
+              <p class="ingridients__text">No synthetics and microplastics</p>
+            </div>
+            <div class="ingridients__item">
+              <img
+                src="./images/icons/recycle.svg"
+                class="ingridients__icon"
+                alt="Recycle icon"
+                >
+              <p class="ingridients__text">
+                Product packaging can be recycled or reused
+              </p>
+            </div>
+            <div class="ingridients__item">
+              <img
+              src="./images/icons/leaves.svg"
+              class="ingridients__icon"
+              alt="Leaves icon"
+              >
+              <p class="ingridients__text">Only natural ingredients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact">
+        <h2 class="heading">Contact us</h2>
+        <div class="contact">
+          <p class="section__paragraph">
+            We will help you choose a product that suits you and answer your other questions
+          </p>
+          <form action="" method="POST" class="form contact__form">
+            <label class="form__item">
+              <input
+                type="text"
+                name="name"
+                class="input form__input"
+                placeholder="Name"
+                required
+              >
+            </label>
+            <label class="form__item">
+              <input
+                type="email"
+                name="email"
+                class="input form__input"
+                placeholder="Email: test@test.com"
+                required
+              >
+            </label>
+            <label class="form__item">
+              <input
+                type="tel"
+                name="phone"
+                class="input form__input"
+                placeholder="Phone: 380934476839"
+                pattern="[0-9]{12}"
+                maxlength="12"
+                required
+              >
+            </label>
+            <label class="form__item">
+              <textarea
+                name="textarea"
+                class="input input__textarea form__input"
+                placeholder="Message"
+                required></textarea>
+            </label>
+            <button type="submit" class="button form__button">Send a message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#shop" class="footer-nav__link">Shop</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#contact" class="footer-nav__link">Contact</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#about" class="footer-nav__link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__socials">
+        <a href="#!">
+          <img
+            src="./images/icons/facebook.svg"
+            alt="Facebook icon"
+            class="footer__icon"
+          >
+        </a>
+        <a href="#!">
+          <img
+            src="./images/icons/instagram.svg"
+            alt="Instagram icon"
+            class="footer__icon"
+          >
+        </a>
+      </div>
+      <div class="footer__contact">
+        <p class="footer__country">Ukraine</p>
+        <a href="mailto:support.mountain@gmail.com" class="footer__email">
+          support.mountain@gmail.com
+        </a>
+        <a href="tel:+380934476839" class="footer__phone">+380934476839</a>
+      </div>
+      <p class="footer__open">Support is available Monday - Friday 9am-6pm</p>
+      <div class="footer__copyright">&copy; 2019 witch of mountain winds</div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
 </html>

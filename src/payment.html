@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Cosmetics — Payment</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="burger">
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+        <span class="burger__span"></span>
+      </div>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./#shop" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="./#contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="./#about" class="nav__link">About</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="./" class="logo header__logo">
+        <img src="./images/icons/logo.svg" alt="Eco Cosmetics logo">
+      </a>
+      <a href="./shipping.html" class="header__cart">
+        <img src="./images/icons/cart.svg" alt="Cart icon">
+      </a>
+    </header>
+    <main class="main">
+      <section class="section">
+        <div class="checkout">
+          <h1 class="checkout__heading">Checkout</h1>
+          <h2 class="checkout__subheading">Payment</h2>
+          <p class="checkout__info">Choose payment option</p>
+          <form action="./confirmation.html" method="GET" class="form checkout__form">
+            <input
+                type="radio"
+                name="payment"
+                id="card"
+                value="card"
+                class="input form__input form__input--radio"
+                checked
+              >
+            <label for="card" class="form__item form__item--dimmed">
+              <img src="./images/icons/credit-card.svg" alt="Credit card" class="form__icon">
+              Credit card
+            </label>
+            <input
+                type="radio"
+                name="payment"
+                id="delivery"
+                value="delivery"
+                class="input form__input form__input--radio"
+            >
+            <label for="delivery" class="form__item form__item--dimmed">
+              <img src="./images/icons/car.svg" alt="Delivery car" class="form__icon">
+              Payment on delivery
+            </label>
+            <button type="submit" class="button form__button">Next</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

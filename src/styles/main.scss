@@ -1,7 +1,41 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+@import "container";
+@import "heading";
+@import "header";
+@import "logo";
+@import "nav";
+@import "burger";
+@import "button";
+@import "learn-more";
+@import "section";
+@import "showcase";
+@import "info";
+@import "about";
+@import "shop";
+@import "creators";
+@import "ingridients";
+@import "contact";
+@import "form";
+@import "input";
+@import "footer";
+@import "footer-nav";
+@import "product";
+@import "checkout";
 
 body {
-  background: $c-gray;
+  background-color: $main-bg-color;
+
+  &.has-modal {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+a,
+button,
+input {
+  &:focus {
+    outline-color: $highlight-color;
+  }
 }
