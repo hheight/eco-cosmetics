@@ -2,4 +2,8 @@
   padding: 0 20px;
   overflow: hidden;
   margin: 0 auto;
+
+  @media screen and (min-width: $breakpoint-small) {
+    padding: 0 27px;
+  }
 }

@@ -4,10 +4,26 @@
   align-items: center;
   height: 50px;
 
+  @media screen and (min-width: $breakpoint-small) {
+    height: 70px;
+  }
+
   &__cart {
     width: 20px;
     height: 24px;
 
     @include hover(transform, scale(1.1));
+  }
+
+  &__logo {
+    order: 1;
+
+    @media screen and (min-width: $breakpoint-small) {
+      order: -1;
+    }
+  }
+
+  &__burger {
+    order: 2;
   }
 }

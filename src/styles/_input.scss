@@ -14,7 +14,7 @@
     height: 27px;
     font-family: $main-font-family;
     color: $main-font-color;
-    margin-top: 45px;
+    margin-top: 30px;
     resize: none;
   }
 
@@ -25,5 +25,10 @@
   &:focus {
     border-color: $main-font-color;
     outline: none;
+  }
+
+  &:valid {
+    color: $highlight-color;
+    border-color: $highlight-color;
   }
 }

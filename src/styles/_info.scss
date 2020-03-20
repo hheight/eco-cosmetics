@@ -6,11 +6,17 @@
     display: none;
   }
 
-  &__scroll-down {
+  &__message {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $highlight-color;
+
+    @media screen and (min-width: $breakpoint-small) {
+      width: 285px;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }

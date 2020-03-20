@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="burger">
+      <div class="burger header__burger">
         <span class="burger__span"></span>
         <span class="burger__span"></span>
         <span class="burger__span"></span>
@@ -47,7 +47,7 @@
             <img src="./images/showcase.jpg" class="showcase__image" alt="Cream jars">
           </div>
           <div class="showcase__description">
-            <h1 class="showcase__title">Brand of eco-cosmetics and magic candles</h1>
+            <h1 class="showcase__heading">Brand of eco-cosmetics and magic candles</h1>
             <p class="showcase__subtitle">20% of sales at a wild bird shelter</p>
             <button class="button showcase__button">Shop</button>
           </div>
@@ -60,23 +60,28 @@
             population of seabirds has declined by 70%. Birds die due to environmental problems and human intervention in
             the natural environment.
           </p>
-          <h3 class="info__scroll-down">
+          <h3 class="info__message">
             If you choose the gifts of nature and care about it’s - scroll down
           </h3>
         </div>
       </section>
       <section class="section" id="about">
-        <h2 class="heading">About our brand</h2>
         <div class="about">
-          <p class="section__paragraph">
-            Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair
-            conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper
-            labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or
-            reused.
-          </p>
-          <a href="#!" class="learn-more about__learn-more">
-            Learn more
-          </a>
+          <div class="about__text">
+            <h2 class="heading">About our brand</h2>
+            <p class="section__paragraph">
+              Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair
+              conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper
+              labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or
+              reused.
+            </p>
+            <a href="#!" class="learn-more about__learn-more">
+              Learn more
+            </a>
+          </div>
+          <div class="about__photo">
+            <img src="./images/shop-candle.jpg" alt="Candle in a jar" class="about__img">
+          </div>
         </div>
       </section>
       <section class="section" id="shop">
@@ -244,30 +249,35 @@
         </div>
       </section>
       <section class="section">
-        <h2 class="heading">About the creators</h2>
         <div class="creators">
-          <p class="section__paragraph">
-            My name is Victoria, I’m a master at candle making and natural cosmetics. In the past, a cynologist, was engaged
-            in herbs, made layouts on the Tarot.
-          </p>
-          <p class="section__paragraph">
-            I am also a volunteer to save wild birds in distress, a consultant to the Phoenix Wildlife Rehabilitation
-            Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife
-            International.
-          </p>
-          <a href="#!" class="learn-more creators__learn-more">
-            Learn more
-          </a>
-          <button class="button creators__button">To contact us</button>
+          <div class="creators__text">
+            <h2 class="heading creators__heading">About the creators</h2>
+            <p class="section__paragraph">
+              My name is Victoria, I’m a master at candle making and natural cosmetics. In the past, a cynologist, was engaged
+              in herbs, made layouts on the Tarot.
+            </p>
+            <p class="section__paragraph">
+              I am also a volunteer to save wild birds in distress, a consultant to the Phoenix Wildlife Rehabilitation
+              Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife
+              International.
+            </p>
+            <a href="#!" class="learn-more creators__learn-more">
+              Learn more
+            </a>
+            <button class="button creators__button">To contact us</button>
+          </div>
+          <div class="creators__photo">
+            <img src="./images/shop-bird.jpg" alt="Bird in hands" class="creators__img">
+          </div>
         </div>
       </section>
       <section class="section">
         <div class="ingridients">
-          <h2 class="heading ingridients__title">Ayurvedic Tooth Powder</h2>
+          <h2 class="heading ingridients__heading">Ayurvedic Tooth Powder</h2>
           <img
             src="./images/tooth-powder.png"
             alt="Tooth powder"
-            class="ingridients__image"
+            class="ingridients__img"
           >
           <a href="#!" class="learn-more ingridients__learn-more">
             Learn more
@@ -303,93 +313,102 @@
         </div>
       </section>
       <section class="section" id="contact">
-        <h2 class="heading">Contact us</h2>
         <div class="contact">
-          <p class="section__paragraph">
-            We will help you choose a product that suits you and answer your other questions
-          </p>
-          <form action="" method="POST" class="form contact__form">
-            <label class="form__item">
-              <input
-                type="text"
-                name="name"
-                class="input form__input"
-                placeholder="Name"
-                required
-              >
-            </label>
-            <label class="form__item">
-              <input
-                type="email"
-                name="email"
-                class="input form__input"
-                placeholder="Email: test@test.com"
-                required
-              >
-            </label>
-            <label class="form__item">
-              <input
-                type="tel"
-                name="phone"
-                class="input form__input"
-                placeholder="Phone: 380934476839"
-                pattern="[0-9]{12}"
-                maxlength="12"
-                required
-              >
-            </label>
-            <label class="form__item">
-              <textarea
-                name="textarea"
-                class="input input__textarea form__input"
-                placeholder="Message"
-                required></textarea>
-            </label>
-            <button type="submit" class="button form__button">Send a message</button>
-          </form>
+          <div class="contact__wrap">
+            <h2 class="heading contact__heading">Contact us</h2>
+            <p class="section__paragraph contact__paragraph">
+              We will help you choose a product that suits you and answer your other questions
+            </p>
+            <form action="" method="POST" class="form contact__form">
+              <label class="form__item">
+                <input
+                  type="text"
+                  name="name"
+                  class="input form__input"
+                  placeholder="Name"
+                  required
+                >
+              </label>
+              <label class="form__item">
+                <input
+                  type="email"
+                  name="email"
+                  class="input form__input"
+                  placeholder="Email: test@test.com"
+                  required
+                >
+              </label>
+              <label class="form__item">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="input form__input"
+                  placeholder="Phone: 380934476839"
+                  pattern="[0-9]{12}"
+                  maxlength="12"
+                  required
+                >
+              </label>
+              <label class="form__item">
+                <textarea
+                  name="textarea"
+                  class="input input__textarea form__input"
+                  placeholder="Message"
+                  required></textarea>
+              </label>
+              <button type="submit" class="button form__button">Send a message</button>
+            </form>
+          </div>
+          <div class="contact__photo">
+            <img src="./images/bird-on-pot.jpg" alt="Bird on a pot" class="contact__img">
+          </div>
         </div>
       </section>
     </div>
   </main>
   <footer class="footer">
-    <div class="container">
-      <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a href="#shop" class="footer-nav__link">Shop</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#contact" class="footer-nav__link">Contact</a>
-          </li>
-          <li class="footer-nav__item">
-            <a href="#about" class="footer-nav__link">About</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__socials">
-        <a href="#!">
-          <img
-            src="./images/icons/facebook.svg"
-            alt="Facebook icon"
-            class="footer__icon"
-          >
-        </a>
-        <a href="#!">
-          <img
-            src="./images/icons/instagram.svg"
-            alt="Instagram icon"
-            class="footer__icon"
-          >
-        </a>
+    <div class="container footer__container">
+      <div class="footer__flex">
+        <div class="footer__links">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#shop" class="footer-nav__link">Shop</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#contact" class="footer-nav__link">Contact</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#about" class="footer-nav__link">About</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__socials">
+            <a href="#!">
+              <img
+                src="./images/icons/facebook.svg"
+                alt="Facebook icon"
+                class="footer__icon"
+              >
+            </a>
+            <a href="#!">
+              <img
+                src="./images/icons/instagram.svg"
+                alt="Instagram icon"
+                class="footer__icon"
+              >
+            </a>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <p class="footer__country">Ukraine</p>
+          <a href="mailto:support.mountain@gmail.com" class="footer__email">
+            support.mountain@gmail.com
+          </a>
+          <a href="tel:+380934476839" class="footer__phone">+380934476839</a>
+          <p class="footer__open">Support is available Monday - Friday 9am-6pm</p>
+        </div>
       </div>
-      <div class="footer__contact">
-        <p class="footer__country">Ukraine</p>
-        <a href="mailto:support.mountain@gmail.com" class="footer__email">
-          support.mountain@gmail.com
-        </a>
-        <a href="tel:+380934476839" class="footer__phone">+380934476839</a>
-      </div>
-      <p class="footer__open">Support is available Monday - Friday 9am-6pm</p>
       <div class="footer__copyright">&copy; 2019 witch of mountain winds</div>
     </div>
   </footer>

@@ -1,23 +1,72 @@
 .product {
   padding-top: 24px;
 
+  @media screen and (min-width: $breakpoint-small) {
+    padding-top: 0;
+  }
+
+  &__container {
+
+    @media screen and (min-width: $breakpoint-small) {
+      width: 466px;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__name {
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 5px;
+
+    @media screen and (min-width: $breakpoint-small) {
+      font-size: 24px;
+      font-weight: normal;
+      text-transform: unset;
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  &__price,
+  &__size {
+    font-size: 18px;
   }
 
   &__price {
     margin-bottom: 12px;
+    color: $highlight-color;
+
+    @media screen and (min-width: $breakpoint-small) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__size {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-small) {
+      display: block;
+    }
   }
 
   &__photo {
     width: 280px;
     height: 248px;
     margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-small) {
+      width: 100%;
+      height: 100%;
+      order: -1;
+    }
   }
 
-  &__image {
+  &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,6 +79,10 @@
 
   &__text {
     margin-top: 50px;
+
+    @media screen and (min-width: $breakpoint-small) {
+      margin-top: 80px;
+    }
 
     &--highlighted {
       color: $highlight-color;

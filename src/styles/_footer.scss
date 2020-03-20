@@ -6,6 +6,16 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
+  &__flex {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 650px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   &__email,
   &__phone {
     display: block;
@@ -15,8 +25,12 @@
     @include hover(color, lighten($footer-font-color, 10%));
   }
 
-  &__socials {
+  &__links {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 650px) {
+      margin-bottom: 50px;
+    }
   }
 
   &__icon {
@@ -25,9 +39,12 @@
     @include hover(transform, scale(1.1));
   }
 
-  &__contact,
+  &__contact {
+    margin-bottom: 30px;
+  }
+
   &__open {
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   &__copyright {
@@ -35,5 +52,11 @@
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: 650px) {
+      margin: 0;
+      width: auto;
+      text-align: left;
+    }
   }
 }
