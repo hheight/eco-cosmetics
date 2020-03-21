@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eco-Cosmetics — Payment</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" href="./images/favicon.png">
 </head>
@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="burger">
+      <div class="burger header__burger">
         <span class="burger__span"></span>
         <span class="burger__span"></span>
         <span class="burger__span"></span>
@@ -32,19 +32,45 @@
         </ul>
       </nav>
       <a href="./" class="logo header__logo">
-        <img src="./images/icons/logo.svg" alt="Eco Cosmetics logo">
+        <img
+          src="./images/icons/logo.svg"
+          class="logo__img"
+          alt="Eco Cosmetics logo"
+        >
+      </a>
+      <a href="./" class="logo header__logo logo--size-big">
+        <img
+          src="./images/icons/logo-big.svg"
+          class="logo__img logo__img--size-big"
+          alt="Eco Cosmetics logo"
+        >
+        Witch of mountain winds
       </a>
       <a href="./shipping.html" class="header__cart">
         <img src="./images/icons/cart.svg" alt="Cart icon">
       </a>
     </header>
-    <main class="main">
-      <section class="section">
+  </div>
+  <main class="main">
+    <section class="section">
+      <div class="container">
         <div class="checkout">
           <h1 class="checkout__heading">Checkout</h1>
-          <h2 class="checkout__subheading">Payment</h2>
+          <div class="checkout__subheadings">
+            <h2 class="checkout__subheading checkout__subheading--success">
+              Shipping
+            </h2>
+            <h2 class="checkout__subheading checkout__subheading--active">
+              Payment
+            </h2>
+            <h2 class="checkout__subheading">Confirmation</h2>
+          </div>
           <p class="checkout__info">Choose payment option</p>
-          <form action="./confirmation.html" method="GET" class="form checkout__form">
+          <form
+            action="./confirmation.html"
+            method="GET"
+            class="form checkout__form checkout__form-payment"
+          >
             <input
                 type="radio"
                 name="payment"
@@ -53,8 +79,14 @@
                 class="input form__input form__input--radio"
                 checked
               >
-            <label for="card" class="form__item checkout__form-item form__item--dimmed">
-              <img src="./images/icons/credit-card.svg" alt="Credit card" class="form__icon">
+            <label
+              for="card"
+              class="form__item checkout__form-item form__item--dimmed"
+            >
+              <img
+                src="./images/icons/credit-card.svg"
+                alt="Credit card" class="form__icon"
+              >
               Credit card
             </label>
             <input
@@ -64,16 +96,24 @@
                 value="delivery"
                 class="input form__input form__input--radio"
             >
-            <label for="delivery" class="form__item checkout__form-item form__item--dimmed">
-              <img src="./images/icons/car.svg" alt="Delivery car" class="form__icon">
+            <label
+              for="delivery"
+              class="form__item checkout__form-item form__item--dimmed"
+            >
+              <img
+                src="./images/icons/car.svg"
+                alt="Delivery car" class="form__icon"
+              >
               Payment on delivery
             </label>
-            <button type="submit" class="button form__button checkout__button">Next</button>
+            <button type="submit" class="button form__button checkout__button">
+              Next
+            </button>
           </form>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
