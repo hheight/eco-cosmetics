@@ -665,7 +665,7 @@ html {
   background-color: #e4dfd3; }
   @media screen and (min-width: 1024px) {
     .shop__tab-content {
-      margin-top: 65px; } }
+      margin-top: 20px; } }
 
 .shop__tab-btn {
   display: none; }
