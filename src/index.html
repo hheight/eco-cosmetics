@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eco-Cosmetics</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="icon" href="./images/favicon.png">
 </head>
@@ -32,7 +32,11 @@
         </ul>
       </nav>
       <a href="./" class="logo header__logo">
-        <img src="./images/icons/logo.svg" alt="Eco Cosmetics logo">
+        <img src="./images/icons/logo.svg" class="logo__img" alt="Eco Cosmetics logo">
+      </a>
+      <a href="./" class="logo header__logo logo--size-big">
+        <img src="./images/icons/logo-big.svg" class="logo__img logo__img--size-big" alt="Eco Cosmetics logo">
+        Witch of mountain winds
       </a>
       <a href="./shipping.html" class="header__cart">
         <img src="./images/icons/cart.svg" alt="Cart icon">
@@ -40,14 +44,18 @@
     </header>
   </div>
   <main class="main">
-    <div class="container">
+    <div class="container container--desktop">
       <section class="section">
         <div class="showcase">
           <div class="showcase__photo">
-            <img src="./images/showcase.jpg" class="showcase__image" alt="Cream jars">
+            <img
+              src="./images/showcase.jpg"
+              class="showcase__img"
+              alt="Cream jars"
+            >
           </div>
           <div class="showcase__description">
-            <h1 class="showcase__heading">Brand of eco-cosmetics and magic candles</h1>
+            <h1 class="showcase__heading">Brand of<br> eco-cosmetics and magic candles</h1>
             <p class="showcase__subtitle">20% of sales at a wild bird shelter</p>
             <button class="button showcase__button">Shop</button>
           </div>
@@ -55,27 +63,31 @@
       </section>
       <section class="section">
         <div class="info">
-          <p class="info__paragraph">
+          <p class="info__paragraph section__paragraph section__paragraph--desktop">
             Biologists say that birds are indicators of the environmental situation, and over the past half century, the
             population of seabirds has declined by 70%. Birds die due to environmental problems and human intervention in
             the natural environment.
           </p>
           <h3 class="info__message">
-            If you choose the gifts of nature and care about it’s - scroll down
+            If you choose the gifts of nature and care about it - scroll down
           </h3>
         </div>
       </section>
       <section class="section" id="about">
         <div class="about">
+          <div class="section__name">Witch of mountain winds</div>
           <div class="about__text">
-            <h2 class="heading">About our brand</h2>
+            <h2 class="heading about__heading">About our brand</h2>
             <p class="section__paragraph">
               Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair
               conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper
               labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or
               reused.
             </p>
-            <a href="#!" class="learn-more about__learn-more">
+            <p class="section__paragraph section__paragraph--desktop">
+              We are all neighbors of one big House. And we must protect what we have. Destroying everything around for the sake of consumerism and imaginary convenience, we destroy what does not belong to us. Be aware of your choice!
+            </p>
+            <a href="#!" class="btn-more about__btn-more">
               Learn more
             </a>
           </div>
@@ -86,6 +98,7 @@
       </section>
       <section class="section" id="shop">
         <div class="shop">
+          <div class="section__name shop__section-name">Shop</div>
           <h2 class="heading shop__heading">Shop</h2>
           <div class="shop__tabs">
             <div class="shop__tab">
@@ -250,6 +263,7 @@
       </section>
       <section class="section">
         <div class="creators">
+          <div class="section__name creators__section-name">About the creators</div>
           <div class="creators__text">
             <h2 class="heading creators__heading">About the creators</h2>
             <p class="section__paragraph">
@@ -261,7 +275,10 @@
               Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife
               International.
             </p>
-            <a href="#!" class="learn-more creators__learn-more">
+            <p class="section__paragraph section__paragraph--desktop">
+              My husband and I live in the Carpathian region in the city of Chernivtsi. I dream of my center for the rehabilitation of wild birds, as it is very difficult to rescue birds in a rented communal apartment.
+            </p>
+            <a href="#!" class="btn-more creators__btn-more">
               Learn more
             </a>
             <button class="button creators__button">To contact us</button>
@@ -273,13 +290,14 @@
       </section>
       <section class="section">
         <div class="ingridients">
+          <div class="section__name">Ingredients</div>
           <h2 class="heading ingridients__heading">Ayurvedic Tooth Powder</h2>
           <img
             src="./images/tooth-powder.png"
             alt="Tooth powder"
             class="ingridients__img"
           >
-          <a href="#!" class="learn-more ingridients__learn-more">
+          <a href="#!" class="btn-more ingridients__btn-more">
             Learn more
           </a>
           <div class="ingridients__info">
@@ -314,6 +332,7 @@
       </section>
       <section class="section" id="contact">
         <div class="contact">
+          <div class="section__name contact__section-name">Contact us</div>
           <div class="contact__wrap">
             <h2 class="heading contact__heading">Contact us</h2>
             <p class="section__paragraph contact__paragraph">
@@ -368,7 +387,7 @@
   </main>
   <footer class="footer">
     <div class="container footer__container">
-      <div class="footer__flex">
+      <div class="footer__grid">
         <div class="footer__links">
           <nav class="footer-nav">
             <ul class="footer-nav__list">

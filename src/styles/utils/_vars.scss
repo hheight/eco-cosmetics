@@ -1,7 +1,13 @@
+/* Typography */
 $main-font-family: "Raleway", sans-serif;
-$main-bg-color: #e4dfd3;
 $main-font-color: #333;
 $highlight-color: #344f10;
+/* Container */
+$container-width: 1380px;
+/* Backgrounds */
+$main-bg-color: #e4dfd3;
 $footer-bg-color: #8c9772;
 $footer-font-color: #e4dfd3;
-$breakpoint-small: 766px;
+/* Breakpoints */
+$breakpoint-tablet: 766px;
+$breakpoint-laptop: 1024px;

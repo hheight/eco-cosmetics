@@ -4,8 +4,21 @@
   align-items: center;
   height: 50px;
 
-  @media screen and (min-width: $breakpoint-small) {
+  @media screen and (min-width: $breakpoint-tablet) {
     height: 70px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 120px;
+  }
+
+  &__nav {
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      justify-self: center;
+    }
   }
 
   &__cart {
@@ -13,12 +26,16 @@
     height: 24px;
 
     @include hover(transform, scale(1.1));
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      justify-self: end;
+    }
   }
 
   &__logo {
     order: 1;
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       order: -1;
     }
   }

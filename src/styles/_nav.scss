@@ -16,7 +16,7 @@
     transform: translateY(0);
   }
 
-  @media screen and (min-width: $breakpoint-small) {
+  @media screen and (min-width: $breakpoint-tablet) {
     position: relative;
     transform: translateY(0);
     justify-content: center;
@@ -29,7 +29,7 @@
     text-align: center;
     padding: 0 20px;
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       display: flex;
       margin: 0;
       padding: 0;
@@ -42,7 +42,7 @@
     font-size: 18px;
     margin-top: 30px;
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       margin-top: 0;
       margin-right: 40px;
 
@@ -78,7 +78,7 @@
       transition: opacity 0.2s, transform 0.2s;
     }
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       color: $highlight-color;
       padding-bottom: 0;
       border-bottom: 0;

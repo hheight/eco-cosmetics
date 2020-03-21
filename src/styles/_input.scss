@@ -1,4 +1,5 @@
 .input {
+  font-family: $main-font-family;
   box-sizing: border-box;
   padding-left: 0;
   padding-bottom: 5px;
@@ -10,12 +11,22 @@
   border-bottom: 1px solid;
   border-color: #bdbdbd;
 
+  @media screen and (min-width: $breakpoint-laptop) {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
   &__textarea {
     height: 27px;
     font-family: $main-font-family;
     color: $main-font-color;
     margin-top: 30px;
     resize: none;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      height: 38px;
+      font-size: 18px;
+    }
   }
 
   &::placeholder {

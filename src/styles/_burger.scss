@@ -8,7 +8,7 @@
   cursor: pointer;
   z-index: 2;
 
-  @media screen and (min-width: $breakpoint-small) {
+  @media screen and (min-width: $breakpoint-tablet) {
     display: none;
   }
 
@@ -16,7 +16,7 @@
     display: block;
     height: 1px;
     background-color: $highlight-color;
-    transition: transform 0.3s;
+    transition: transform 0.4s, opacity 0.3s;
   }
 
   &--clicked {
@@ -29,7 +29,8 @@
       }
 
       &:nth-child(2) {
-        width: 0;
+        transform: translateX(70px);
+        opacity: 0;
       }
 
       &:last-child {

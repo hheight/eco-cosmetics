@@ -2,6 +2,14 @@
 
   &__heading {
     text-align: center;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__section-name {
+    top: 50%;
   }
 
   &__tabs {
@@ -11,8 +19,12 @@
     min-height: 430px;
     margin-top: 12px;
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       justify-content: flex-start;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      min-height: 740px;
     }
   }
 
@@ -40,7 +52,7 @@
       background-color: $main-font-color;
     }
 
-    @media screen and (min-width: $breakpoint-small) {
+    @media screen and (min-width: $breakpoint-tablet) {
       margin-right: 40px;
     }
   }
@@ -54,6 +66,10 @@
     display: flex;
     overflow: scroll hidden;
     background-color: $main-bg-color;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      margin-top: 65px;
+    }
   }
 
   &__tab-btn {
@@ -89,6 +105,10 @@
     margin-right: 20px;
     transition: color 0.2s;
 
+    @media screen and (min-width: $breakpoint-laptop) {
+      width: 380px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -106,6 +126,11 @@
     width: 280px;
     height: 267px;
     overflow: hidden;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      width: 380px;
+      height: 500px;
+    }
   }
 
   &__product-title {

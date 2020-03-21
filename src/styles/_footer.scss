@@ -6,13 +6,17 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
-  &__flex {
-    display: flex;
-    flex-direction: column;
+  @media screen and (min-width: $breakpoint-laptop) {
+    font-size: 18px;
+    padding-top: 60px;
+  }
 
-    @media screen and (min-width: 650px) {
-      flex-direction: row;
-      justify-content: space-between;
+  &__grid {
+    display: grid;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -22,15 +26,15 @@
     color: $footer-font-color;
     margin-top: 12px;
 
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-top: 20px;
+    }
+
     @include hover(color, lighten($footer-font-color, 10%));
   }
 
   &__links {
     margin-bottom: 30px;
-
-    @media screen and (min-width: 650px) {
-      margin-bottom: 50px;
-    }
   }
 
   &__icon {
