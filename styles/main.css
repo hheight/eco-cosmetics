@@ -949,8 +949,7 @@ html {
   @media screen and (min-width: 766px) {
     .contact__photo {
       display: block;
-      height: 427px;
-      min-width: 368px; } }
+      height: 427px; } }
   @media screen and (min-width: 1024px) {
     .contact__photo {
       height: 584px; } }
