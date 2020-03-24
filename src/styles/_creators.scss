@@ -13,9 +13,7 @@
   &__text {
 
     @media screen and (min-width: $breakpoint-tablet) {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      align-self: end;
       width: 342px;
     }
 

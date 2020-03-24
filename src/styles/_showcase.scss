@@ -12,9 +12,7 @@
   &__description {
 
     @media screen and (min-width: $breakpoint-laptop) {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      align-self: end;
       order: -1;
     }
   }

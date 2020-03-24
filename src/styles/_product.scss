@@ -28,9 +28,7 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-self: end;
     max-width: 280px;
     margin: 0 auto;
 
