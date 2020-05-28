@@ -1,0 +1,11 @@
+.heading {
+  font-size: 24px;
+  color: $highlight-color;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    font-size: 36px;
+  }
+}

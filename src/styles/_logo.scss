@@ -1,0 +1,39 @@
+.logo {
+  width: 24px;
+  height: 24px;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    display: none;
+  }
+
+  &__img {
+    transition: transform 0.2s;
+
+    &--size-big {
+      margin-right: 12px;
+    }
+  }
+
+  &:hover {
+
+    .logo__img {
+      transform: scale(1.1);
+    }
+  }
+
+  &--size-big {
+    display: none;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: $highlight-color;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: auto;
+    }
+  }
+}

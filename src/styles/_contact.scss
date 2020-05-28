@@ -1,0 +1,90 @@
+.contact {
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  &__section-name {
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      top: 30%;
+    }
+  }
+
+  &__wrap {
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 342px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      align-self: end;
+      width: auto;
+      max-width: 480px;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__paragraph {
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      font-size: 24px;
+    }
+  }
+
+  &__form {
+    margin: 30px auto 0;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      grid-template-columns: 342px;
+      margin: 30px 0 0;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      grid-template-columns: 480px;
+      margin: 50px 0 0;
+    }
+  }
+
+  &__photo {
+    display: none;
+    overflow: hidden;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      display: block;
+      height: 427px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      height: 584px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include hover(transform, scale(1.1));
+  }
+}

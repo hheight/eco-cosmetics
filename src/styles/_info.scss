@@ -1,0 +1,64 @@
+.info {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 0.9fr 1.1fr;
+    padding: 100px 0;
+  }
+
+  &__paragraph {
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding-right: 50px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: -100px;
+        left: -150px;
+        width: 530px;
+        height: 1px;
+        background-color: $highlight-color;
+      }
+    }
+  }
+
+  &__message {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $highlight-color;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 285px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      position: relative;
+      width: 380px;
+      margin: 0;
+      font-size: 24px;
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -100px;
+        right: -250px;
+        width: 630px;
+        height: 1px;
+        background-color: $highlight-color;
+      }
+    }
+  }
+}

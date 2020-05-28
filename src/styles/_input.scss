@@ -1,0 +1,45 @@
+.input {
+  font-family: $main-font-family;
+  box-sizing: border-box;
+  padding-left: 0;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $main-font-color;
+  background-color: $main-bg-color;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #bdbdbd;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  &__textarea {
+    height: 27px;
+    font-family: $main-font-family;
+    color: $main-font-color;
+    margin-top: 30px;
+    resize: none;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      height: 38px;
+      font-size: 18px;
+    }
+  }
+
+  &::placeholder {
+    color: #828282;
+  }
+
+  &:focus {
+    border-color: $main-font-color;
+    outline: none;
+  }
+
+  &:valid {
+    color: $highlight-color;
+    border-color: $highlight-color;
+  }
+}

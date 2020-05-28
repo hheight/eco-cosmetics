@@ -1,0 +1,22 @@
+.container {
+  max-width: $container-width;
+  box-sizing: border-box;
+  padding: 0 20px;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 0 27px;
+  }
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    padding: 0 50px;
+  }
+
+  &--desktop {
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      padding: 0 50px 0 150px;
+    }
+  }
+}

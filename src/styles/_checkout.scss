@@ -1,0 +1,172 @@
+.checkout {
+
+  &__heading {
+    font-size: 14px;
+    line-height: 2;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-bottom: 1px solid #bdbdbd;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 218px;
+      margin-top: 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      font-size: 36px;
+      line-height: 1.3;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: $highlight-color;
+      border-bottom: 0;
+      margin: 50px auto 0;
+    }
+  }
+
+  &__subheadings {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      justify-content: space-between;
+      width: 450px;
+      margin: 40px auto 0;
+    }
+  }
+
+  &__subheading {
+    display: none;
+    font-size: 16px;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    cursor: default;
+    opacity: 0.5;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 60px auto 0;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      display: block;
+      margin: 0;
+    }
+
+    &--active {
+      position: relative;
+      display: block;
+      opacity: 1;
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $main-font-color;
+      }
+    }
+
+    &--success {
+      color: $highlight-color;
+    }
+  }
+
+  &__form {
+    justify-content: center;
+    margin-top: 27px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-top: 47px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 220px;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      grid-template-columns: repeat(2, 380px);
+    }
+  }
+
+  &__form-payment {
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      grid-template-columns: repeat(2, 200px);
+    }
+  }
+
+  &__info {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin: 60px 0;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    width: 280px;
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 68px auto 30px;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      font-size: 50px;
+      width: 620px;
+      margin: 68px auto;
+    }
+  }
+
+  &__form-item {
+    margin-bottom: 43px;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      transform: scale(1.5);
+    }
+  }
+
+  &__button {
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      grid-column: 1 / 3;
+      margin: 60px auto 0;
+    }
+  }
+
+  &__back-btn {
+    @extend .btn-more;
+    color: $main-font-color;
+    width: 110px;
+    margin: 140px auto;
+
+    @media screen and (min-width: $breakpoint-laptop) {
+      margin: 90px auto;
+    }
+
+    &:hover::after {
+      background-color: $main-font-color;
+    }
+  }
+}

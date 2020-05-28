@@ -1,0 +1,66 @@
+.footer {
+  font-size: 14px;
+  line-height: 1.3;
+  color: $footer-font-color;
+  background-color: $footer-bg-color;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $breakpoint-laptop) {
+    font-size: 18px;
+    padding-top: 60px;
+  }
+
+  &__grid {
+    display: grid;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      grid-gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__email,
+  &__phone {
+    display: block;
+    color: $footer-font-color;
+    margin-top: 12px;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-top: 20px;
+    }
+
+    @include hover(color, lighten($footer-font-color, 10%));
+  }
+
+  &__links {
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    margin-right: 20px;
+
+    @include hover(transform, scale(1.1));
+  }
+
+  &__contact {
+    margin-bottom: 30px;
+  }
+
+  &__open {
+    margin-top: 20px;
+  }
+
+  &__copyright {
+    width: 198px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 650px) {
+      margin: 0;
+      width: auto;
+      text-align: left;
+    }
+  }
+}
